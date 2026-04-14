@@ -13,12 +13,13 @@ import { getFirestore } from 'firebase/firestore';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT_ID.appspot.com',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-  appId: 'YOUR_APP_ID',
+  apiKey: 'AIzaSyDozsсK5Ucms-0yKslocBu2zaX8wpHeKLQ',
+  authDomain: 'adalges15.firebaseapp.com',
+  projectId: 'adalges15',
+  storageBucket: 'adalges15.firebasestorage.app',
+  messagingSenderId: '56783599410',
+  appId: '1:56783599410:web:f4c0204c936b7c9fa7092b',
+  measurementId: 'G-B3MHJPDJES',
 };
 
 // Evita reinicializar a app em hot-reload
