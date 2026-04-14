@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "ADAlges",
+    "slug": "ADAlges",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/logo.png",
+      "name": "ADAlges",
+      "shortName": "ADAlges",
+      "themeColor": "#060d1f",
+      "backgroundColor": "#060d1f",
+      "display": "standalone"
+    }
+  }
+}
