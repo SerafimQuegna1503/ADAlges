@@ -114,6 +114,7 @@ export default function GroupsScreen({ navigation }) {
           onPress={() =>
             navigation.navigate('GrupoDetalhe', {
               groupName: group.name,
+              groupId: group.id,
             })
           }
         >

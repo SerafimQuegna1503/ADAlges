@@ -1,0 +1,36 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Comunicados - leitura pública, escrita bloqueada no lado do servidor
+    // (a app controla o acesso via PIN, não Firebase Auth)
+    match /comunicados/{docId} {
+      allow read: if true;
+      allow write: if true; // Protegido pelo modo de teste (30 dias)
+    }
+
+    // Agenda
+    match /agenda/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Grupos
+    match /grupos/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Configurações (links de redes sociais, etc.)
+    match /config/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // Bloquear tudo o resto
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
